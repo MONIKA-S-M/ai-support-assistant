@@ -525,20 +525,33 @@ Install Ollama separately and make sure it is available on the system.
 ollama pull llama3.2:3b
 ```
 
-### 7. Start the FastAPI backend
+### 7. Start the complete application
+
+Run the following single command from the project directory:
 
 ```powershell
-uvicorn app.main:app --reload
+python run.py
 ```
 
-### 8. Start the Streamlit frontend
+This starts both the FastAPI backend and Streamlit frontend.
 
-Open another terminal, activate the virtual environment, and run:
+The Streamlit interface will be available at:
 
-```powershell
-streamlit run streamlit_app.py
+```text
+http://localhost:8501
 ```
 
+The FastAPI backend will be available at:
+
+```text
+http://localhost:8000
+```
+
+API documentation (Swagger UI) is available at:
+
+```text
+http://localhost:8000/docs
+```
 ---
 
 ## Project Structure
