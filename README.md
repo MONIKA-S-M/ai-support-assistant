@@ -733,6 +733,13 @@ This makes the system easier to maintain and extend.
 
 ---
 
+## Known Limitations
+
+- The system currently uses a fixed CSV dataset and does not connect to a live ticketing system.
+- The LLM runs locally using Ollama and requires the Llama 3.2 3B model to be available.
+- Anomaly detection uses rule-based and statistical thresholds that may require tuning for different datasets.
+- The current system is designed for the provided support-ticket dataset and may need additional query handling for unsupported question types.
+
 ## Future Improvements
 
 Possible future improvements include:
